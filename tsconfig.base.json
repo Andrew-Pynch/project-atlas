@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "verbatimModuleSyntax": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@atlas/core": ["packages/core/src/index.ts"],
+      "@atlas/db": ["packages/db/src/index.ts"],
+      "@atlas/llm": ["packages/llm/src/index.ts"],
+      "@atlas/ui": ["packages/ui/src/index.ts"]
+    }
+  }
+}

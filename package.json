@@ -1,0 +1,26 @@
+{
+  "name": "project-atlas",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "bun@1.2.22",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "local": "turbo run local --parallel --filter=@atlas/web --filter=@atlas/api",
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "typecheck": "turbo run typecheck",
+    "lint": "turbo run lint",
+    "mcp": "turbo run dev --filter=@atlas/mcp",
+    "db:init": "turbo run db:init --filter=@atlas/api",
+    "import:index": "turbo run import:index --filter=@atlas/api",
+    "hooks:install": "bash ./scripts/install-personal-agent-hooks.sh",
+    "local-domain:setup": "bash ./scripts/setup-local-domain.sh"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.0",
+    "typescript": "^5.8.0"
+  }
+}

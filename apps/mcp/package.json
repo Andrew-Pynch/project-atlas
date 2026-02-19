@@ -1,0 +1,16 @@
+{
+  "name": "@atlas/mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun src/server.ts",
+    "local": "bun src/server.ts",
+    "build": "bun build src/server.ts --outdir dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@atlas/db": "workspace:*",
+    "@atlas/llm": "workspace:*"
+  }
+}

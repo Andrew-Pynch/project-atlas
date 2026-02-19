@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "project-atlas": {
+      "command": "bun",
+      "args": ["run", "--cwd", "/home/andrew/personal/project-atlas/apps/mcp", "src/server.ts"]
+    }
+  }
+}

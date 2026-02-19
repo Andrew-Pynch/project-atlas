@@ -1,0 +1,19 @@
+{
+  "name": "@atlas/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/server.ts",
+    "local": "ATLAS_API_PORT=3341 bun --watch src/server.ts",
+    "build": "bun build src/server.ts --outdir dist",
+    "typecheck": "tsc --noEmit",
+    "db:init": "bun src/cli-db-init.ts",
+    "import:index": "bun src/cli-import-index.ts"
+  },
+  "dependencies": {
+    "@atlas/core": "workspace:*",
+    "@atlas/db": "workspace:*",
+    "@atlas/llm": "workspace:*"
+  }
+}
